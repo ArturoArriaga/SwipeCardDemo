@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C9A79D23EE0CCF0073F2EB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C9A79C23EE0CCF0073F2EB /* Card.swift */; };
 		59CD1C1623EE06B4007BBA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD1C1523EE06B4007BBA43 /* AppDelegate.swift */; };
 		59CD1C1823EE06B4007BBA43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD1C1723EE06B4007BBA43 /* SceneDelegate.swift */; };
-		59CD1C1A23EE06B4007BBA43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD1C1923EE06B4007BBA43 /* ContentView.swift */; };
+		59CD1C1A23EE06B4007BBA43 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD1C1923EE06B4007BBA43 /* RootViewController.swift */; };
 		59CD1C1C23EE06B6007BBA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CD1C1B23EE06B6007BBA43 /* Assets.xcassets */; };
 		59CD1C1F23EE06B6007BBA43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CD1C1E23EE06B6007BBA43 /* Preview Assets.xcassets */; };
 		59CD1C2223EE06B6007BBA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CD1C2023EE06B6007BBA43 /* LaunchScreen.storyboard */; };
+		59CD1C2C23EE0773007BBA43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD1C2B23EE0773007BBA43 /* Extensions.swift */; };
+		59CD1C2E23EE07A6007BBA43 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD1C2D23EE07A6007BBA43 /* CardView.swift */; };
+		59CD1C3223EE08A1007BBA43 /* PanelViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CD1C3123EE08A1007BBA43 /* PanelViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59C9A79C23EE0CCF0073F2EB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		59CD1C1223EE06B4007BBA43 /* SwipeCardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeCardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CD1C1523EE06B4007BBA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CD1C1723EE06B4007BBA43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		59CD1C1923EE06B4007BBA43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		59CD1C1923EE06B4007BBA43 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		59CD1C1B23EE06B6007BBA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59CD1C1E23EE06B6007BBA43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59CD1C2123EE06B6007BBA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59CD1C2323EE06B6007BBA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CD1C2B23EE0773007BBA43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		59CD1C2D23EE07A6007BBA43 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		59CD1C3123EE08A1007BBA43 /* PanelViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59C9A79E23EE0CDA0073F2EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59C9A79C23EE0CCF0073F2EB /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		59CD1C0923EE06B4007BBA43 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +72,12 @@
 		59CD1C1423EE06B4007BBA43 /* SwipeCardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				59CD1C2F23EE07BB007BBA43 /* Extensions */,
+				59C9A79E23EE0CDA0073F2EB /* Model */,
+				59CD1C3023EE07CB007BBA43 /* Views */,
+				59CD1C1923EE06B4007BBA43 /* RootViewController.swift */,
 				59CD1C1523EE06B4007BBA43 /* AppDelegate.swift */,
 				59CD1C1723EE06B4007BBA43 /* SceneDelegate.swift */,
-				59CD1C1923EE06B4007BBA43 /* ContentView.swift */,
 				59CD1C1B23EE06B6007BBA43 /* Assets.xcassets */,
 				59CD1C2023EE06B6007BBA43 /* LaunchScreen.storyboard */,
 				59CD1C2323EE06B6007BBA43 /* Info.plist */,
@@ -73,6 +92,23 @@
 				59CD1C1E23EE06B6007BBA43 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59CD1C2F23EE07BB007BBA43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59CD1C2B23EE0773007BBA43 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		59CD1C3023EE07CB007BBA43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59CD1C2D23EE07A6007BBA43 /* CardView.swift */,
+				59CD1C3123EE08A1007BBA43 /* PanelViews.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59CD1C2C23EE0773007BBA43 /* Extensions.swift in Sources */,
 				59CD1C1623EE06B4007BBA43 /* AppDelegate.swift in Sources */,
+				59C9A79D23EE0CCF0073F2EB /* Card.swift in Sources */,
 				59CD1C1823EE06B4007BBA43 /* SceneDelegate.swift in Sources */,
-				59CD1C1A23EE06B4007BBA43 /* ContentView.swift in Sources */,
+				59CD1C1A23EE06B4007BBA43 /* RootViewController.swift in Sources */,
+				59CD1C2E23EE07A6007BBA43 /* CardView.swift in Sources */,
+				59CD1C3223EE08A1007BBA43 /* PanelViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwipeCardDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL7GL2KY97;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwipeCardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwipeCardDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL7GL2KY97;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwipeCardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
