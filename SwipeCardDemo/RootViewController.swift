@@ -9,11 +9,11 @@ import UIKit
 
 class RootViewController: UIViewController {
     
-    let topPanel = TopPanelStackView()
-    let centerView = UIView()
+   fileprivate let topPanel = TopPanelStackView()
+   fileprivate let centerView = UIView()
     
     // Insert more cards here
-    let originalCards = [
+   fileprivate let originalCards = [
         Card(title: "Tesla Truck", imageName: "teslaTruck", color: #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)),
         Card(title: "Tesla in red", imageName: "teslaRed", color: #colorLiteral(red: 0.8996149898, green: 0.2200287282, blue: 0.2751584947, alpha: 1)),
         Card(title: "Tesla in white", imageName: "teslaWhite", color: #colorLiteral(red: 0.1354812832, green: 0.1375340299, blue: 0.1375340299, alpha: 1)),
